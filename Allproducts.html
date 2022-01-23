@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/9b33d8169c.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="/nav.css">  
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Document</title>
+    <style>
+  .w3-image{
+            height: 450px;
+            /* margin-left: 0.71%; */
+            width:100%;
+        }        
+        #slick{
+            width: 100%;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 150px;
+            /* border: 4px solid blue; */
+        } 
+        .slider_content>.slick-prev{
+        left:0.1%;
+        z-index: 1;
+        /* background-color: gray; */
+        height: 80px;
+        width: 7.5%;
+        height: 100%;
+        opacity: 0.3;
+        color: red;
+    /* -webkit-mask-image: -webkit-gradient(linear, right top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+        background-image:linear-gradient(to right, #00000061 , #ffffff00);
+        }
+        .slider_content>.slick-next{
+        right:0.01%;
+        z-index: 1;
+        /* background-color: gray; */
+        height: 80px;
+        width: 7.5%;
+        height: 100%;
+        background-image:linear-gradient(to left, #00000061 , #ffffff00);
+        }
+        .totalnav{
+            /* border: 5px solid red; */
+            /* height:200px ; */
+            width: 100%;
+            position: relative;
+            margin-bottom: 0px;
+        }
+        .carousel{
+            margin-top: 0px;
+        }
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #a{
+            width: 90%;
+            border: 1px solid white;
+        margin: auto;
+        height: 18px;
+        color: grey;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        
+        }
+        #b{
+        width: 90%;
+        border: 1px solid white;
+        display: flex;
+        margin: auto;
+        height: 40px;
+        color: grey;
+        margin-top: 8px;
+        justify-content: space-between;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        
+        }
+        #b1{
+        display: grid;
+        grid-template-columns: repeat(5,55px);
+        grid-template-rows: repeat(1,40px) ;
+    
+        }
+        #b1>button{
+            border: 1px solid rgb(221, 221, 221) ;
+            margin-top: 3.5px;
+            background-color: white;  
+            border-radius: 4px;
+          font-weight: bold;
+          color: rgb(88, 88, 88);
+          font-size: 14px;
+        }
+    #b1>#btn2:hover{
+background-color:#dde;
+cursor: pointer;
+        }
+        #btn3:hover{
+background-color:#dde;
+cursor: pointer;
+        }
+        #btn4:hover{
+background-color:#dde;
+cursor: pointer;
+        }
+       #btn5:hover{
+        background-color:#dde;
+        cursor: pointer;  
+       }
+        #b2{
+border: 1px solid #dde;
+width: 30%;
+height: 30px;
+margin-top: 4px ;
+display: grid;
+grid-template-columns: 90% 20%;
+grid-template-rows: repeat(1,30px);
+
+        }
+        #b2>div:nth-child(1){
+            border-right: 2px solid #dde;
+            padding: 5px;
+            font-size: 16px;
+            font-family: serif;
+        }
+        select{
+            width: 18px;
+            margin-top: 9%;
+        margin-left: 5%;
+        border :1px solid white;
+        color: lightslategray;
+        }
+        #b2:hover{
+            border: 2px solid #4096cc;
+        }
+        #con{
+            border: 1px solid white;
+            width: 90%;
+            margin: auto;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,440px);
+            gap:25px ;
+        
+        }
+        #con>div{
+            border: 2px dotted hsl(86, 37%, 64%);
+            border-radius: 5px;
+        }
+       #con>div>p:nth-child(3){
+            margin-left: 116px;      
+        }
+     div>img{
+            width: 95%;
+            height: 55%;
+            margin-top: 5px;
+        }
+        #con:hover>button{
+         color: white;
+         background-color: #4096cc;
+         cursor: pointer;
+        }
+   #btn1{
+          color: #4096cc;
+          background-color: white;  
+         border: 1px solid #dde;
+        }
+        #btn1:hover{
+            background-color: #4096cc;
+            color: white;
+        }
+        #div1{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        #div1:hover>button{
+            cursor: pointer;
+            background-color: #50aee9;
+            color: white;
+        }
+        #load>button{
+            background-color: white;
+            border: 2px solid #4096cc;
+            color: #4096cc;
+            font-size: 11px;
+            width: 15%;
+            height: 42px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            
+        }
+        #load>button:hover{
+            cursor: pointer;
+            color: white;
+            background-color: #4096cc;
+        }
+      #load{
+          margin-left: 46%;
+          margin-top: 20px;
+     
+           }
+          #div3{
+              margin-left: 120px;
+          }
+          #foot>div{
+              border: 1px solid lightgray;
+          }
+         
+         #foot{
+            
+            width: 90%;
+            margin: auto;
+            border: 1px solid lightgrey;
+            height: 800px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:15% 20% 65%;
+            margin-top: 5%;
+        
+            text-align: center;
+          
+            
+        }
+        #foot1{
+              display: grid;
+              grid-template-columns: 20% 30% 50%;
+              grid-template-rows: 100%;
+          
+          border: 1px solid lightgray; 
+         }
+         #foot1>div{
+             border: 1px solid lightgray;
+         }
+         #foot2{
+            display: grid;
+              grid-template-columns: 40% 20% 20% 20%;
+              grid-template-rows: 100%;
+         }
+         #foot2>div{
+             border: 1px solid lightgrey;
+         }
+         #foot3{
+            display: grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-template-rows: 100%;
+         }
+         #foot3>div{
+             border: 1px solid lightgrey;
+         }
+        
+        #foot1{
+            display: grid;
+            grid-template-columns: 20% 30% 50%;
+            grid-template-rows: 100%;
+        border: 1px solid lightgrey; 
+         text-align: center;
+       }
+       #foot1>div>img{
+           width: 20%;
+           height: 20%;
+           border: 1px solid white;
+       }
+      
+       #foot1>div:nth-child(3)>button{
+           background-color:  white;
+           color: #4096cc;
+           border: 1px solid #4096cc;
+           
+           width: 50%;
+           height: 50px;
+           border-radius: 20px;
+           
+       }
+       #foot1>div>button:hover{
+           color: white;
+           cursor: pointer;
+           background-color: #4096cc;
+       }
+       #foot1>div{
+           border: 1px solid white;
+       }
+       #foot2{
+          display: grid;
+            grid-template-columns: 40% 20% 20% 20%;
+            grid-template-rows: 100%;
+       }
+       #foot2>div{
+           border: 1px solid white;
+       }
+       #foot4{
+          display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            grid-template-rows: 100%;
+            text-align: start;
+            justify-content: space-around;
+            
+            
+       }
+       
+       #foot4>div{
+           border: 1px solid white;
+       }
+       #foot2>div>img{
+           width: 25%;
+           height: 25%;
+           border: 1px solid white;
+       }
+       #foot4>div>img{
+ width: 60%;
+ height: 60%;
+ margin-left: 15px;
+ border: 1px solid white;
+
+       }
+       #foot4>div>h2{
+           color: gray;
+
+       }
+       #foot4>div>h5{
+           color: rgb(175, 173, 173);
+       }
+       #foot2a{
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
+           grid-template-rows: 60% 40%
+       }
+       #foot2a>div{
+           border: 1px solid white;
+       }
+       #foot2b{
+           display: grid;
+           grid-template-columns: 20% 20% 20% 20%;
+           grid-template-rows: 100%;
+       }
+       #foot2b>div{
+           border: 1px solid white;
+       }
+      #foot2b>div>img{
+          height: 50%;
+          width: 50%;
+      }
+      #foot4>div>h5:hover{
+          color: #4096cc;
+          cursor: pointer;
+      }
+      #hello{
+          margin-top: 110px;
+      }
+      #main{
+          margin-bottom: 10px;
+      }
+      
+
+        @media screen and (min-width:0px) and (max-width:720px){
+            #con{
+            border: 1px solid white;
+            width: 95%;
+            margin: auto;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,375px);
+            gap:5px;
+            border:0.12rem dotted rgb(135, 190, 73);
+        }  
+        div>p:nth-child(3){
+            margin-left: 135px;      
+        }
+        div>img{
+            width: 95%;
+            height: 55%;
+            margin-top: 4px;
+        }
+      
+        #btn1:hover{
+        
+            border: 1px solid #64BAf0;
+           cursor: pointer;
+           
+        }#a{
+            width: 100%;
+        }
+        #b{
+        width: 100%;
+        border: 1px solid white;
+
+        display: flex;
+        margin: auto;
+        height: 40px;
+        color: grey;
+        margin-top: 10px;
+        justify-content: space-between;
+        }#b2{
+            margin-right: 5px;
+            width: 40%;
+        }
+        #load>button{
+            background-color: #50aee9;
+            border: 2px solid #50aee9;
+            color: white;
+            font-size: 10px;
+            width: 29%;
+            height: 40px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            
+        }
+        #load{
+            margin-left: 42%;
+            margin-top: 20px;
+        }
+
+        #foot{
+            
+              width: 90%;
+              margin: auto;
+              border: 1px solid 3;
+              height: 500px;
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows:15% 20% 65%;
+              margin-top: 5%;
+              font-size: 10px;
+              text-align: center;
+            
+              
+          }
+          #foot>div{
+              border: 1px solid lightgrey;
+          }
+          #foot1{
+              display: grid;
+              grid-template-columns: 20% 30% 50%;
+              grid-template-rows: 100%;
+          border: 1px solid lightgrey; 
+          font-size: 8px;
+          text-align: center;
+         }
+         #foot1>div:nth-child(1)>img{
+             width: 30%;
+             
+         }
+         #foot1>div:nth-child(2)>img{
+             width: 30%;
+             
+         }
+         #foot1>div:nth-child(3)>button{
+             background-color: #64BAf0;
+             color: white;
+             border: 1px solid white;
+             font-size: 10px;
+             width: 40%;
+             height: 30px;
+             
+         }
+         #foot1>div{
+             border: 1px solid white;
+         }
+         #foot2{
+            display: grid;
+              grid-template-columns: 40% 20% 20% 20%;
+              grid-template-rows: 100%;
+         }
+         #foot2>div{
+             border: 1px solid lightgrey;
+         }
+         #foot4{
+            display: grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-template-rows: 100%;
+              text-align: start;
+              margin-left: 10px;
+              
+         }
+         #hello{
+             margin-top: 200px;
+         }
+        
+         #foot4>div{
+             border: 1px solid lightgrey;
+         }
+         #foot2>div>img{
+             width: 60%;
+             height: 60%;
+         }
+         #foot4>div>img{
+            width: 80%;
+            height: 90%;
+            margin-left: 15px;
+
+         }
+         #foot4>div>h2{
+             color:lightgrey;
+         }
+         #foot1>div>button:hover{
+          background-color: white;
+          color: #4096cc;
+          cursor: pointer;
+          font-weight: bold;
+      }
+       #div3{
+           margin-left: 133px;
+       }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="hidden-nav-id" class="hidden-nav-c" style="z-index:10; position: fixed;"></div>
+    <div class="totalnav" style="z-index:10;">
+    <div id="upper-nav">
+        <div>
+            <a href="">
+            <p class="whitepara">Asia's 1st Brand with MADE SAFE Certified Products</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+            <p class="whitepara">Free Shipping Above 399|COD Available | Extra 5% OFF on Prepaid Orders | Shop Now</p>
+            </a>
+        </div>
+        <div>
+            <p class="whitepara"><i class="far fa-user"></i></p>
+        </div>
+    </div>
+    <div class="main-nav">
+    <div id="nav-bar">
+            <div>
+                <img id="nav-img" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+            </div>
+            
+        <div class="search">
+                <input id="nav-input" type="text" placeholder="Search for product.....">
+                <button class="searchbutton">
+                    <div class="searchicon"><i class="fas fa-search"></i></div>
+                    <div class="searchicon">Search</div>
+                    
+                </button>
+        </div>
+        <div class="cart-login-icon">
+                <div>
+                     <p id="cart" style="color: rgb(0,175,239);"><i class="fas fa-shopping-cart"></i><a href="cart.html">Cart</a></p>
+                </div>
+
+                <div class="container">
+                    <nav class="navv">
+                        <ul>
+                            <!-- <li><p id="login" style="color: rgb(0,175,239);"><i class="far fa-user-circle"></i>Login</p></li> -->
+                            <li id="login" ><i id="enter-login-page" class="far fa-user-circle"></i>Login
+                                <div class="megadiv">
+                                    <div class="innermegadiv">
+                                        <p class="font-inline"><i class="far fa-user"></i>Your Profile</p><hr>
+                                        <p class="font-inline"><i class="fas fa-shopping-cart"></i>Your Order</p><hr>
+                                        <p class="font-inline"><i class="fas fa-map-marked-alt"></i>Manage Address</p><hr>
+                                        <p class="font-inline"><i class="fas fa-phone-alt"></i>Contact Us</p><hr>
+                                        <p id="enter-login-page1"><button class="login-button" >LOGIN</button></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>   
+                    </nav>
+                    <div class="header"></div>
+                </div>
+        </div>
+    </div>
+        
+    <div id="lower-div">
+            <nav class="nav-bar">
+                <ul>
+                    <li> HOME</li>
+                    <li>BABY
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Baby</h3></p>
+                                <p>Baby Sampoo</p>
+                                <p>Baby Oralcare</p>
+                                <p>Baby Oil</p>
+                                <p>Baby Skin</p>
+                                <p>Baby Bath</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: blue;">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>BEAUTY
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Beauty</h3></p>
+                                <p>Face</p>
+                                <p>Hair</p>
+                                <p>Body</p>
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: blue;">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>HAIR
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Hair</h3></p>
+                                <p>Shampoo</p>
+                                <p>Conditioner</p>
+                                <p>Hair Oil</p>
+                                <p>Hair Mask</p>
+                                <p>Hair Serum</p>
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: blue;">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>FACE
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Fash Wash</h3></p>
+                                <p>Face Mask</p>
+                                <p>Face Cream</p>
+                                <p>Face Serum</p>
+                                <p>Face scrub</p>
+                                <p>Face Toner</p>
+                                
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: blue;">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>BODY
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Body Butter</h3></p>
+                                <p>Body Wash</p>
+                                <p>Body Lotion</p>
+                                <p>Body Scrub</p>
+                                <p>Hand Cream</p>
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: blue;">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                     <li>GIFT</li>
+                    <li>ALL</li>
+                    <li>BLOG</li>
+                    <li>PLANT</li>
+                    <li>STORE</li>
+                </ul>
+            </nav>
+            <div class="header-banner"></div>
+    </div>
+       
+   <!-- <div class="cart">
+       <div id="cartoffer">
+           <p id="cartoffer">Congrats, Your Order is Eligible for FREE Shipping</p>
+       </div><br> -->
+        <!-- <div class="cartpage">
+           <h1>CART</h1>
+       </div>  -->
+       <!-- <div>
+           <p id="close" class="fas fa-times"></p>
+       </div> -->
+      <!-- <div id="cartdata">
+       
+      </div> -->
+   <!-- </div>  -->
+   <div class="login-page">
+       <div class="cancel"><img src="https://mamaearth.in/static/mamaearth/close.svg" alt="cancel" height="30px" width="30px"></div>
+       <div class="login-start">Log in to get started</div>
+       <div class="login-intro">
+           <img src="https://mamaearth.in/static/mamaearth/login.svg" alt="refresh" width="80px" height="100%">
+           <span>
+               Get access to your orders, track<br>
+                previous order & Redeem Mama <br>
+                Cash
+           </span>
+       </div>
+       <form>
+                <div style="height: 3rem; display: block; width: 100%;"></div>
+                <div class="enter-mobile-number">
+                    <span>Phone Number</span>
+                    <input type="number" name="contact" prefix="+91" autocomplete="off" placeholder class="StyledInput-sc-1m95fu4-0 bidybM">
+                </div>
+                <div style="height: 2rem; display: block; width: 100%;"></div>
+        
+            <div class="condition">
+                By Continuing, you agree to Mamaearth's 
+                <span>
+                    <a href="https://mamaearth.in/terms-and-conditions">Terms and Conditions</a>
+                </span>
+                and
+                <span>
+                    <a href="https://mamaearth.in/privacy-policy">Privacy Policy</a>
+                </span>
+                <div style="height: 2rem; display: block; width: 100%;"></div>
+            </div>
+            <!-- <input type="submit" class="ekbpwy" value="LOGIN WITH OTP"> -->
+            <!-- <div id="ekbpwy" class="fas fa-arrow-left"></div> -->
+            <button type="submit" class="OTPLoginForm__Loginbtn-sc-10upjnk-1 ekbpwy" >LOGIN WITH OTP</button>
+        </form>
+        <div class="continue-as-guest">
+            <a href="nav.html">CONTINUE AS GUEST</a>
+        </div>
+   </div>
+
+
+
+
+
+                        <div class="signup-page">
+                            
+                            <img id="back" src="https://mamaearth.in/static/mamaearth/arrow_back.svg" alt="back">
+                            <div class="signup-start">Signup for the Goodness Inside</div>
+                            <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                            <div class="full-details">
+                                <form>
+                                    <div style="height: 0.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">Phone Number</span>
+                                    <input type="text" name="phone" class="phone-number">
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">First Name</span>
+                                    <input type="text" name="first-name" class="phone-number">
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">Last Name</span>
+                                    <input type="text" name="last-name" class="phone-number">
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">Email-Id</span>
+                                    <input type="email" name="email-id" class="phone-number">
+                                    <div style="height: 2rem; display: block; width: 100%;"></div>
+                                    <!-- <input type="submit" class="sign-up" value="SIGN UP"> -->
+                                    <button class="sign-up" type="submit">SIGN UP</button>
+                                </form>
+                            </div>
+                        </div>
+      </div>
+    </div>
+    <div class="carousel"style="">
+    <div id="slick">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider_content" >
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/3KpAt6dymSeMCfM7EVcRcU/68cabba382d97ba93533ce840a6b1dd2/Desktop.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/OoKYuxKNlL96p4n6uytiG/02aecfff5b2170bf9fab1c1be850e17c/Desktop_Without_CTA.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/5PxNrfy3MFlGvhMhbPnkzC/12987fb4e703c124af3dbb04ac15a068/Desktop.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/46QF7M9bz5K63GCCaE3Maw/b3f7805e3455ec73e143ba56ba3cac1e/1920x512-desktop-with-shop-now-copy.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/7cIuZmMMGOhy3PBGbpbF04/ac2e5689ae31acefcf1477c45366d846/face-serum.jpg?q=40">
+                       </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div id="hello">
+  <div id="a">
+    Home/Shop
+  </div>
+  <div id="b">
+      <div id="b1">
+    <button id="btn1" style="background-color: #dde;">ALL</button>
+    <button id="btn2" >HAIR</button>
+    <button id="btn3" >FACE</button>
+     <button id="btn4">BODY</button>
+     <button id="btn5">BABY</button>    
+    </div>
+       <div id="b2">
+            <div>Sort By</div>
+            <div>
+                <select id="selecttag" onchange="selec()">
+                    <option value=""></option>
+                    <option value="Rate" style="color: rgb(66, 66, 66);">Rating</option>
+                    <option value="Low" style="color: rgb(66, 66, 66);">Price - High to Low</option>
+                    <option value="High" style="color: rgb(66, 66, 66);">Price - Low to High</option>
+                
+                </select>
+            </div>
+       </div>
+    </div>
+    <div id="con">
+    </div>
+    <div id="load"><button>LOAD MORE</button></div>
+    <div id="foot">
+        <div id="foot1">
+            <div>
+                <img src="https://mamaearthp.imgix.net/wysiwyg/delivery2x.png?auto=format" alt="">
+                <h5>Free shiping</h5>
+                <h5>On order above Rs.399</h5>
+            
+            </div>
+        <div>
+            <img src="https://mamaearthp.imgix.net/wysiwyg/Group_81512x.png?auto=format" alt="">
+            <h5>COD Available</h5>
+            <h5>@ Rs. 40 Per Order</h5>
+        </div>
+        <div>
+            <h4>Have Queries or Concerns?</h4>
+            <button>CONTACT US</button>
+        </div>
+    </div>
+        <div id="foot2">
+<div id="foot2a">
+    <div>
+    <h5>PAYMENT</h5>
+    <h5>100% Payment Protection ,Easy Return Policy</h5>
+</div>
+<div id="foot2b">
+    <div><img src="https://mamaearthp.imgix.net/wysiwyg/visa2x.png?auto=format&fit=scale" alt=""></div>
+    <div><img src="https://mamaearthp.imgix.net/wysiwyg/master_card2x.png?auto=format&fit=scale" alt=""></div>
+    <div> <img src="https://mamaearthp.imgix.net/wysiwyg/american_express2x.png?auto=format&fit=scale" alt=""></div>
+    <div><img src="https://mamaearthp.imgix.net/wysiwyg/rupay2x.png?auto=format&fit=scale" alt=""></div>
+    <div> <img src="https://mamaearthp.imgix.net/wysiwyg/net_banking2x.png?auto=format&fit=scale" alt=""></div>
+</div>
+    
+</div>
+<div>
+    <img src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x1002x.png?auto=format" alt="">
+<h6>Dermatologically Tested</h6>
+</div>
+<div>
+    <img src="https://mamaearthp.imgix.net/wysiwyg/fda-100x1002x.png?auto=format" alt="">
+    <h5>FDA Approvel</h5>
+</div>
+<div>
+    <img src="https://mamaearthp.imgix.net/wysiwyg/MadeSafeImages13Jan/madesafe13janlogo.png?auto=format" alt="">
+   <h5> Media Safe Certificate</h5>
+</div>
+        </div>
+        
+      
+        <div id="foot4">
+            <div>
+                <h2>USEFUL LINKS</h2>
+                <h5>Privacy Policy</h5>
+                <h5>Returns</h5>
+                <h5>Terms & Conditions</h5>
+                <h5>Terms & Conditions- Cashback</h5>
+                <h5>FAQs</h5>
+                <h5>We're Safe</h5>
+                <h5>Track Order</h5>
+                <h5>Contact Us</h5>
+                <h5>Sitemap</h5>
+                <h5>About Us</h5>
+            </div>
+            <div>
+                <h2>CATEGORIES</h2>
+                <h5>Baby</h5>
+                <h5>Beauty</h5>
+                <h5>Hair</h5>
+                <h5>Face</h5>
+                <h5>Body</h5>
+                <h5>Gift Pack</h5>
+
+            </div>
+            <div>
+                <h2>MY ACCOUNT</h2>
+                <h5>Account</h5>
+                <h5>Order</h5>
+                <h5>Addresses</h5>
+            </div>
+            <div>
+                <img src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png?auto=format" alt="">
+            </div>
+        </div>
+    </div>
+</div></div>
+</body>
+</html>
+<script>
+    var arr=JSON.parse(localStorage.getItem("data1"))||[];
+    var cartarr=JSON.parse(localStorage.getItem("cartArr"))||[];
+    
+    function selec(){
+    var res=document.querySelector("#selecttag").value;
+    if(res=="High"){
+        data.sort(function (a,b){
+            return Number(a.price)-Number(b.price);
+          
+        })
+        localStorage.setItem("data1",JSON.stringify(data));
+        maping(data);
+    }
+if(res=="Low"){
+    data.sort(function(a,b){
+        return Number(b.price)-Number(a.price)
+       
+    });
+    localStorage.setItem("data1",JSON.stringify(data));
+maping(data);
+}
+}
+
+    var data = [
+    {
+      name: "Mamaearth Almond Mask with Almond Oil & Vitamin E for Healthy Hair Growth-200 g",
+      imageURL:"https://honasa-mamaearth-production.imgix.net/a/l/almond-hair-mask_2.jpg?auto=compress&fit=scale&w=400&h=400",
+      rate:"5.0★",
+      price: 599,
+    },
+    {
+        name:"Mamaearth ME Eau De Parfum For a Fragrance As Unique As-8 ml Kit",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/p/e/perfume-1_3.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:300,
+    },
+    {
+        name:"Mamaearth ME Eau De Parfum For a Fragrance As Unique As You - 8 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/p/e/perfume-1_2.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:149,
+    },
+    {
+        name:"Almond Beard Oil with Almond & Biotin For Beard Nourishment - 30 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/a/l/almond-beard-oil.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:499
+    },
+    {
+        name:"Onion Beard Oil with Onion & Redensyl For Beard Growth - 30 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/o/n/onion-beard-oil.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:499
+    },
+    {
+        name:"Tea Tree Beard Oil With Tea Tree & Salicylic Acid For Itch-Free Beard - 30 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-beard-oil.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:499
+    },
+    {
+        name:"Skin Radiance Body Care Kit - Ubtan Body Lotion & Vitamin Body Lotion-(400 ml each)",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-beard-oil.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:399
+    },
+    {
+        name:"Skin Refreshing & Soothing Body Care Kit-Rose Body Lotion+Vitamin C Body Lotion - (400ml)",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_and_rose.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:399    
+    },
+    {
+        name:"Skin Nourishing Body Care Combo - Ubtan Body Lotion + Rose Body Lotion  - (400 ml)",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/u/b/ubtan_and_rose.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:399
+    },
+    {
+        name:"Vitamin C Body Lotion with Vitamin C & Honey for Radiant Skin - 400 ml   (Pack of 2)",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_body_lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:399
+    },
+    {
+        name:"Ubtan Body Lotion with Turmeric & Kokum Butter for Glowing Skin - 400 ml  (Pack of 2)",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/u/b/ubtan_body_lotion_7.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"5.0★",
+        price:399
+    },
+    {
+        name:"Rose Body Lotion with Rose Water & Milk for Deep Hydration (400 ml) - Pack of 2",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/r/o/rose_body_lotion_7.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"4.7★",
+        price:399
+    },
+    {
+        name:"Vitamin C 100% Natural Lip Care Kit With Lip Scrub & Lip Mask For Pink and Plump Lips - 90 g",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/l/i/lip-care-kit-1.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"4.7★",
+        price:599
+    },
+    {
+        name:"Almond Conditioner with Almond Oil & Vitamin E for Healthy Hair Growth - 250 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/a/l/almond-conditioner.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"  4.9★",
+        price:349
+    },
+    {
+        name:"Almond Shampoo with Cold Pressed Almond Oil and Vitamin E for Healthy Hair Growth - 250 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/a/l/almond-range-copy.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"4.6★",
+        price:349
+    },
+    {
+        name:"Almond Hair Oil with Cold Pressed Almond Oil & Vitamin E for Healthy Hair Growth - 150 ml ",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/a/l/almond-oil-1.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"4.9★",
+        price:399
+    },
+    {
+        name:"Ubtan Nourishing Cold Cream with Turmeric & Saffron for Glowing Moisturization - 200 g",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/u/b/ubtan-cold-cream-1.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"4.9★",
+        price:299
+    },
+    {
+        name:"CoCo Nourishing Cold Cream With Coffee and Vitamin E For Rich Moisturization - 200 g",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/c/o/coco-cold-cream-1.jpg?auto=compress&fit=scale&w=400&h=400",
+        rate:"4.8★",
+        price:299
+    },
+    {
+        name:"Vitamin C Nourishing Cold Cream with Vitamin C & Honey for Illuminating Moisturization -20g",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/v/i/vitamin-c-cold-cream-1.jpg?auto=compress&fit=scale&w=200&h=200",
+        rate:"5.0★",
+        price:299
+    },
+    {
+        name:"Ubtan Oil-Free Face Moisturizer with Turmeric & Saffron for Skin Brightening - 80 ml",
+        imageURL:"https://honasa-mamaearth-production.imgix.net/u/b/ubtan-oil-free-moisturizer1.jpg?auto=compress&fit=scale&w=200&h=200",
+        rate:"5.0★",
+        price:299
+    }
+]
+maping(data)
+function  maping(data){
+    document.querySelector("#con").innerHTML="";
+data.map(function (ele){
+
+var div1=document.createElement("div")
+div1.style.textAlign="center";
+div1.setAttribute("id","div1");
+// *************image************
+var image=document.createElement("img")
+image.setAttribute("src",ele.imageURL)
+image.style.border="1px solid #dde";
+image.style.marginLeft="2px";
+// **********name*********
+var nam=document.createElement("p");
+nam.textContent=ele.name;
+nam.style.fontSize="12.2px";
+nam.style.textAlign="center"
+nam.style.padding="0px 8.96px"
+nam.style.wordSpacing="3px"
+// nam.style.fontWidth="600";
+nam.style.color="#333333";
+nam.style.marginTop="10px"
+// nam.style.fontWeight="600"
+// ************rate***********
+var div3=document.createElement("div")
+div3.style.marginTop="10px";
+div3.style.marginLeft="135px"
+div3.setAttribute("id","div3");
+
+
+var rat=document.createElement("p");
+rat.textContent=ele.rate;
+rat.style.fontSize="12px"
+rat.style.backgroundColor="#6DA523"
+rat.style.width="32px"
+rat.style.height="20px"
+rat.style.wordSpacing="3px"
+rat.style.paddingTop="5px"
+rat.style.textAlign="center"
+rat.style.padding="5px 4px 1px"
+rat.style.color="white";
+rat.style.borderRadius="5px"
+div3.append(rat);
+
+rat.style.fontWeight="600"
+// ***************price**************
+var div4=document.createElement("div");
+
+
+var pric=document.createElement("h5");
+pric.textContent="Rs."+ ele.price;
+pric.style.textAlign="center";
+pric.style.wordSpacing="6px"
+pric.style.paddingTop="5px"
+pric.style.color="#1D1D1D";
+pric.style.fontSize="12.6px";
+pric.style.fontWeight="525";
+
+div4.append(pric);
+
+
+// *******add to cart**********
+var btn=document.createElement("button");
+btn.textContent="ADD TO CART";
+btn.setAttribute("id","btn1")
+//btn.style.backgroundColor="white";
+//btn.style.border="1px solid #dde"
+//btn.style.color="#64BAF0"
+btn.style.fontWeight="600"
+btn.style.fontSize="11.6px";
+btn.style.width="90%"
+btn.style.height="10%";
+btn.style.wordSpacing="3px";
+btn.style.marginTop="30px";
+btn.addEventListener("click",function(){
+    addtoCart(ele);
+    alert("Added sucessfully")
+})
+div1.append(image,nam,div3,div4 ,btn)
+document.querySelector("#con").append(div1);
+
+});
+localStorage.setItem("data1",JSON.stringify(data));}
+
+
+function addtoCart(ele){
+    console.log(ele);
+    cartarr.push(ele);
+    localStorage.setItem("cartArr",JSON.stringify(cartarr));
+    
+}
+
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        
+            <script type="text/javascript">
+                $(document).ready(function(){
+            $('.slider_content').slick({
+              // dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            autoplay: true,
+            adaptiveHeight: true,
+            arrows:true,
+            // prevArrow:'<i class=" fas fa-angle-right clr-gry"></i>',
+            // nextArrow:'.nn2',
+            })
+        })
+            </script>
+            <script src="nav.js"></script>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="/nav.css">  
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <style>       
+        .w3-image{
+            height: 450px;
+            /* margin-left: 0.71%; */
+            width:100%;
+        }        
+        #slick{
+            width: 100%;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 150px;
+            /* border: 4px solid blue; */
+        } 
+        .slider_content>.slick-prev{
+        left:0.1%;
+        z-index: 1;
+        /* background-color: gray; */
+        height: 80px;
+        width: 7.5%;
+        height: 100%;
+        opacity: 0.3;
+        color: red;
+    /* -webkit-mask-image: -webkit-gradient(linear, right top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+        background-image:linear-gradient(to right, #00000061 , #ffffff00);
+        }
+        .slider_content>.slick-next{
+        right:0.01%;
+        z-index: 1;
+        /* background-color: gray; */
+        height: 80px;
+        width: 7.5%;
+        height: 100%;
+        background-image:linear-gradient(to left, #00000061 , #ffffff00);
+        }
+        .totalnav{
+            /* border: 5px solid red; */
+            /* height:200px ; */
+            width: 100%;
+            position: relative;
+            margin-bottom: 0px;
+        }
+        .carousel{
+            margin-top: 0px;
+        }
+        </style>
+        </head>
+        <body>
+          <div id="hidden-nav-id" class="hidden-nav-c" style="z-index:10; position: fixed;"></div>
+            <div class="totalnav" style="z-index:10;">
+            <div id="upper-nav">
+                <div>
+                    <a href="">
+                    <p class="whitepara">Asia's 1st Brand with MADE SAFE Certified Products</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                    <p class="whitepara">Free Shipping Above 399|COD Available | Extra 5% OFF on Prepaid Orders | Shop Now</p>
+                    </a>
+                </div>
+                <div>
+                    <p class="whitepara"><i class="far fa-user"></i></p>
+                </div>
+            </div>
+            <div class="main-nav">
+            <div id="nav-bar">
+                    <div>
+                        <img id="nav-img" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+                    </div>
+                    
+                <div class="search">
+                        <input id="nav-input" type="text" placeholder="Search for product.....">
+                        <button class="searchbutton">
+                            <div class="searchicon"><i class="fas fa-search"></i></div>
+                            <div class="searchicon">Search</div>
+                            
+                        </button>
+                </div>
+                <div class="cart-login-icon">
+                        <div>
+                             <p id="cart" style="color: rgb(0,175,239);"><i class="fas fa-shopping-cart"></i>Cart</p>
+                        </div>
+        
+                        <div class="container">
+                            <nav class="navv">
+                                <ul>
+                                    <!-- <li><p id="login" style="color: rgb(0,175,239);"><i class="far fa-user-circle"></i>Login</p></li> -->
+                                    <li id="login" ><i id="enter-login-page" class="far fa-user-circle"></i>Login
+                                        <div class="megadiv">
+                                            <div class="innermegadiv">
+                                                <p class="font-inline"><i class="far fa-user"></i>Your Profile</p><hr>
+                                                <p class="font-inline"><i class="fas fa-shopping-cart"></i>Your Order</p><hr>
+                                                <p class="font-inline"><i class="fas fa-map-marked-alt"></i>Manage Address</p><hr>
+                                                <p class="font-inline"><i class="fas fa-phone-alt"></i>Contact Us</p><hr>
+                                                <p id="enter-login-page1"><button class="login-button" >LOGIN</button></p>
+                                                
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>   
+                            </nav>
+                            <div class="header"></div>
+                        </div>
+                </div>
+            </div>
+                
+            <div id="lower-div">
+                    <nav class="nav-bar">
+                        <ul>
+                            <li> HOME</li>
+                            <li>BABY
+                                <div class="mega-menu">
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Explore</h3></p>
+                                        <p>New Launches</p>
+                                        <p>Best Sellers</p>
+                                        <p>Combos</p>
+                                        <p>Gift Packs</p>
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Baby</h3></p>
+                                        <p>Baby Sampoo</p>
+                                        <p>Baby Oralcare</p>
+                                        <p>Baby Oil</p>
+                                        <p>Baby Skin</p>
+                                        <p>Baby Bath</p>
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3 style="color: blue;">See All</h3></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>BEAUTY
+                                <div class="mega-menu">
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Explore</h3></p>
+                                        <p>New Launches</p>
+                                        <p>Best Sellers</p>
+                                        <p>Combos</p>
+                                        <p>Gift Packs</p>
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Beauty</h3></p>
+                                        <p>Face</p>
+                                        <p>Hair</p>
+                                        <p>Body</p>
+                                        
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3 style="color: blue;">See All</h3></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>HAIR
+                                <div class="mega-menu">
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Explore</h3></p>
+                                        <p>New Launches</p>
+                                        <p>Best Sellers</p>
+                                        <p>Combos</p>
+                                        <p>Gift Packs</p>
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Hair</h3></p>
+                                        <p>Shampoo</p>
+                                        <p>Conditioner</p>
+                                        <p>Hair Oil</p>
+                                        <p>Hair Mask</p>
+                                        <p>Hair Serum</p>
+                                        
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3 style="color: blue;">See All</h3></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>FACE
+                                <div class="mega-menu">
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Explore</h3></p>
+                                        <p>New Launches</p>
+                                        <p>Best Sellers</p>
+                                        <p>Combos</p>
+                                        <p>Gift Packs</p>
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Fash Wash</h3></p>
+                                        <p>Face Mask</p>
+                                        <p>Face Cream</p>
+                                        <p>Face Serum</p>
+                                        <p>Face scrub</p>
+                                        <p>Face Toner</p>
+                                        
+                                        
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3 style="color: blue;">See All</h3></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>BODY
+                                <div class="mega-menu">
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Explore</h3></p>
+                                        <p>New Launches</p>
+                                        <p>Best Sellers</p>
+                                        <p>Combos</p>
+                                        <p>Gift Packs</p>
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3>Body Butter</h3></p>
+                                        <p>Body Wash</p>
+                                        <p>Body Lotion</p>
+                                        <p>Body Scrub</p>
+                                        <p>Hand Cream</p>
+                                        
+                                    </div>
+                                    <div class="inner-mega-menu">
+                                        <p><h3 style="color: blue;">See All</h3></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <li>GIFT</li>
+                            <li>ALL</li>
+                            <li>BLOG</li>
+                            <li>PLANT</li>
+                            <li>STORE</li>
+                        </ul>
+                    </nav>
+                    <div class="header-banner"></div>
+            </div>
+               
+           <!-- <div class="cart">
+               <div id="cartoffer">
+                   <p id="cartoffer">Congrats, Your Order is Eligible for FREE Shipping</p>
+               </div><br> -->
+                <!-- <div class="cartpage">
+                   <h1>CART</h1>
+               </div>  -->
+               <!-- <div>
+                   <p id="close" class="fas fa-times"></p>
+               </div> -->
+              <!-- <div id="cartdata">
+               
+              </div> -->
+           <!-- </div>  -->
+           <div class="login-page">
+               <div class="cancel"><img src="https://mamaearth.in/static/mamaearth/close.svg" alt="cancel" height="30px" width="30px"></div>
+               <div class="login-start">Log in to get started</div>
+               <div class="login-intro">
+                   <img src="https://mamaearth.in/static/mamaearth/login.svg" alt="refresh" width="80px" height="100%">
+                   <span>
+                       Get access to your orders, track<br>
+                        previous order & Redeem Mama <br>
+                        Cash
+                   </span>
+               </div>
+               <form>
+                        <div style="height: 3rem; display: block; width: 100%;"></div>
+                        <div class="enter-mobile-number">
+                            <span>Phone Number</span>
+                            <input type="number" name="contact" prefix="+91" autocomplete="off" placeholder class="StyledInput-sc-1m95fu4-0 bidybM">
+                        </div>
+                        <div style="height: 2rem; display: block; width: 100%;"></div>
+                
+                    <div class="condition">
+                        By Continuing, you agree to Mamaearth's 
+                        <span>
+                            <a href="https://mamaearth.in/terms-and-conditions">Terms and Conditions</a>
+                        </span>
+                        and
+                        <span>
+                            <a href="https://mamaearth.in/privacy-policy">Privacy Policy</a>
+                        </span>
+                        <div style="height: 2rem; display: block; width: 100%;"></div>
+                    </div>
+                    <!-- <input type="submit" class="ekbpwy" value="LOGIN WITH OTP"> -->
+                    <!-- <div id="ekbpwy" class="fas fa-arrow-left"></div> -->
+                    <button type="submit" class="OTPLoginForm__Loginbtn-sc-10upjnk-1 ekbpwy" >LOGIN WITH OTP</button>
+                </form>
+                <div class="continue-as-guest">
+                    <a href="nav.html">CONTINUE AS GUEST</a>
+                </div>
+           </div>
+        
+        
+        
+        
+        
+                                <div class="signup-page">
+                                    
+                                    <img id="back" src="https://mamaearth.in/static/mamaearth/arrow_back.svg" alt="back">
+                                    <div class="signup-start">Signup for the Goodness Inside</div>
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <div class="full-details">
+                                        <form>
+                                            <div style="height: 0.5rem; display: block; width: 100%;"></div>
+                                            <span class="label">Phone Number</span>
+                                            <input type="text" name="phone" class="phone-number">
+                                            <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                            <span class="label">First Name</span>
+                                            <input type="text" name="first-name" class="phone-number">
+                                            <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                            <span class="label">Last Name</span>
+                                            <input type="text" name="last-name" class="phone-number">
+                                            <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                            <span class="label">Email-Id</span>
+                                            <input type="email" name="email-id" class="phone-number">
+                                            <div style="height: 2rem; display: block; width: 100%;"></div>
+                                            <!-- <input type="submit" class="sign-up" value="SIGN UP"> -->
+                                            <button class="sign-up" type="submit">SIGN UP</button>
+                                        </form>
+                                    </div>
+                                </div>
+              </div>
+            </div>
+            <div class="carousel"style="">
+            <div id="slick">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider_content" >
+                               <div class="slider_items">
+                                   <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/3KpAt6dymSeMCfM7EVcRcU/68cabba382d97ba93533ce840a6b1dd2/Desktop.jpg?q=40">
+                               </div>
+                               <div class="slider_items">
+                                   <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/OoKYuxKNlL96p4n6uytiG/02aecfff5b2170bf9fab1c1be850e17c/Desktop_Without_CTA.jpg?q=40">
+                               </div>
+                               <div class="slider_items">
+                                   <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/5PxNrfy3MFlGvhMhbPnkzC/12987fb4e703c124af3dbb04ac15a068/Desktop.jpg?q=40">
+                               </div>
+                               <div class="slider_items">
+                                   <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/46QF7M9bz5K63GCCaE3Maw/b3f7805e3455ec73e143ba56ba3cac1e/1920x512-desktop-with-shop-now-copy.jpg?q=40">
+                               </div>
+                               <div class="slider_items">
+                                   <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/7cIuZmMMGOhy3PBGbpbF04/ac2e5689ae31acefcf1477c45366d846/face-serum.jpg?q=40">
+                               </div>                        
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        
+            <script type="text/javascript">
+                $(document).ready(function(){
+            $('.slider_content').slick({
+              // dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            autoplay: true,
+            adaptiveHeight: true,
+            arrows:true,
+            // prevArrow:'<i class=" fas fa-angle-right clr-gry"></i>',
+            // nextArrow:'.nn2',
+            });
+        });
+            </script>

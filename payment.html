@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+}
+
+.container{
+    width: 750px;
+    height: 500px;
+    border: 1px solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content:space-around;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.firstrow{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.inputfield{
+    border: 1px solid #999;
+}
+
+.inputfield input{
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+submit{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: dodgerblue;
+}
+
+.cards img{
+    width: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conform Your Payment</h1>
+        <div class="firstrow">
+            <div class="owner">
+                <h3>Full Name</h3>
+                <div class="inputfield">
+                    <input class="fullname" type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="inputfield">
+                    <input class="cvv" type="text" maxlength="3">
+                </div>
+            </div>
+        </div>
+        <div class="Secondrow">
+            <div class="cardnumber">
+                <h3>Card Number</h3>
+                <div class="inputfield">
+                    <input class="cardnumber" type="text" maxlength="16">
+                </div>
+            </div>
+        </div>
+        <div class="thirdrow">
+                <h3>EXPIRY DATE</h3>
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                            <option value="jan">Jan</option>
+                            <option value="feb">Feb</option>
+                            <option value="mar">Mar</option>
+                            <option value="apr">Apr</option>
+                            <option value="may">May</option>
+                            <option value="jun">Jun</option>
+                            <option value="jul">Jul</option>
+                            <option value="aug">Aug</option>
+                            <option value="sep">Sep</option>
+                            <option value="oct">Oct</option>
+                            <option value="nov">Nov</option>
+                            <option value="dec">Dec</option>
+                        </select>
+                        <select name="years" id="years">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                    <div class="cards">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOQf9kgVqREbBTD1AerWTRMRDcyfmQgP3mg&usqp=CAU" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbq8EqOAKuADpAsQVh9_CDaqNQpyuMWSuJgg&usqp=CAU" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiSvAaKGTyAhbQi1KTwNmuwhAI2Tm8MHNyA&usqp=CAU" alt="">
+                    </div>
+                </div>
+            
+        </div>
+        <form>
+            <input onclick="window.location.href='otp.html'" class="submit" type="submit" placeholder="confirm">
+        <!-- <a class="submit">Conform</a> -->
+       </form>
+    </div>
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("submit", signin);
+    function signin(event){
+        event.preventDefault();
+        var fullname = document.querySelector(".fullname").value;
+        var cvv = document.querySelector(".cvv").value;
+        var cardnumber = document.querySelector(".cardnumber").value;
+        // if(fullname=="")
+        // {
+        //     alert("Please fill Full Name")
+        //     // alert("Payment Successful")
+        // }
+        // else if(cvv=="")
+        // {
+        //     alert("Please fill CVV")
+        // }
+        // else if(cardnumber=="")
+        // {
+        //     alert("Please fill CVV")
+        // }
+        if((fullname!="") && (cvv!="") && (cardnumber!=""))
+        {
+            
+            
+            window.location.href="otp.html"
+            alert("Otp is send to your Regestered mobile number")
+        }
+        else{
+            alert("Please fill all Data")
+            
+            
+        }
+    }
+</script>

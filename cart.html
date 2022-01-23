@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9b33d8169c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <h1 id="heading">CART ITEM</h1>
+    <h1 id="total-price">Total Price <i class="fas fa-rupee-sign"></i></h1>
+    <h1 id="total-product">Total Product</h1>
+    <button id="con2"><a href="payment.html">BUY NOW</a></button>
+    <div id="con"></div>
+</body>
+</html>
+<script>
+    var cartarr = JSON.parse(localStorage.getItem("cartArr"))
+    console.log(cartarr)
+    maping(cartarr)
+function  maping(cartarr){
+    document.querySelector("#con").innerHTML="";
+cartarr.map(function (ele){
+
+var div1=document.createElement("div")
+div1.style.textAlign="center";
+div1.setAttribute("id","div1");
+// *************image************
+var image=document.createElement("img")
+image.setAttribute("src",ele.imageURL)
+image.style.border="1px solid #dde";
+image.style.marginLeft="2px";
+// **********name*********
+var nam=document.createElement("p");
+nam.textContent=ele.name;
+nam.style.fontSize="12.2px";
+nam.style.textAlign="center"
+nam.style.padding="0px 8.96px"
+nam.style.wordSpacing="3px"
+// nam.style.fontWidth="600";
+nam.style.color="#333333";
+nam.style.marginTop="10px"
+// nam.style.fontWeight="600"
+// ************rate***********
+var div3=document.createElement("div")
+div3.style.marginTop="10px";
+div3.setAttribute("id","div3");
+div3.style.marginLeft="133px"
+
+
+var rat=document.createElement("p");
+rat.textContent=ele.rate;
+rat.style.fontSize="12px"
+rat.style.backgroundColor="#6DA523"
+rat.style.width="32px"
+rat.style.height="20px"
+rat.style.wordSpacing="3px"
+rat.style.paddingTop="5px"
+rat.style.textAlign="center"
+rat.style.padding="5px 4px 1px"
+rat.style.color="white";
+rat.style.borderRadius="5px"
+div3.append(rat);
+
+rat.style.fontWeight="600"
+// ***************price**************
+var div4=document.createElement("div");
+
+
+var pric=document.createElement("h5");
+pric.textContent="Rs."+ ele.price;
+pric.style.textAlign="center";
+pric.style.wordSpacing="6px"
+pric.style.paddingTop="5px"
+pric.style.color="#1D1D1D";
+pric.style.fontSize="12.6px";
+pric.style.fontWeight="525";
+
+div4.append(pric);
+var btn = document.createElement("button")
+// btn.addEventListener("href",payment.html)
+btn.setAttribute("window.location.href","payment.html")
+btn.addEventListener("click",function(){
+    btn(ele)
+})
+
+btn.textContent="CHECK OUT"
+btn.style.width="85%"
+btn.style.height="30px"
+btn.style.color="white"
+btn.style.border="none"
+btn.style.backgroundColor="rgb(109,165,35)"
+// btn.onclick.window.location.href="payment.html"
+
+
+
+// *******add to cart**********
+
+div1.append(image,nam,div3,div4,btn)
+document.querySelector("#con").append(div1);
+
+
+});
+    document.querySelector("#total-product").textContent= "TOTAL PRODUCT = "+(cartarr.length)
+    var total = cartarr.reduce(function(acc,cv){
+        return acc=acc+Number(cv.price)
+    },0)
+    document.querySelector("#total-price").textContent= "TOTAL PRICE  = "+"₹"+total
+    console.log(total)
+
+    function btn(ele){
+        window.location.href="payment.html"
+        
+    }
+
+    
+
+}
+</script>
