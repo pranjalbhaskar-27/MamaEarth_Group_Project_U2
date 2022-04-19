@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="/nav.css">  
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://kit.fontawesome.com/9b33d8169c.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            /* background-color: chocolate; */
+        }        
+        .w3-image{
+            height: 450px;
+            /* margin-left: 0.71%; */
+            width:100%;
+        }        
+        #slick{
+            width: 100%;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 150px;
+            /* border: 4px solid blue; */
+        } 
+        .slider_content>.slick-prev{
+        left:0.1%;
+        z-index: 1;
+        /* background-color: gray; */
+        height: 80px;
+        width: 7.5%;
+        height: 100%;
+        opacity: 0.3;
+        color: red;
+    /* -webkit-mask-image: -webkit-gradient(linear, right top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+        background-image:linear-gradient(to right, #00000061 , #ffffff00);
+        }
+        .slider_content>.slick-next{
+        right:0.01%;
+        z-index: 1;
+        /* background-color: gray; */
+        height: 80px;
+        width: 7.5%;
+        height: 100%;
+        background-image:linear-gradient(to left, #00000061 , #ffffff00);
+        }
+        .totalnav{
+            /* border: 5px solid red; */
+            /* height:200px ; */
+            width: 100%;
+            position: relative;
+        }
+        .carousel{
+            margin-bottom: 8%;
+            /* position: */
+        }
+        /* ---------------page css------------------ */
+        * {
+        font-family: "Lato", sans-serif;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 10px;
+        margin: auto;
+
+        width: 1500px;
+      }
+      #container > #flex {
+        width: 350px;
+        border: 1px solid black;
+        height: 550px;
+        margin: auto;
+        justify-content: center;
+        border: .5px #E8F3DE solid;
+      }
+      #container > div:nth-child(2),
+      #container > div:nth-child(3),
+      #container > div:nth-child(4) {
+        border: 1px solid black;
+        height: 550px;
+        margin: auto;
+        justify-content: center;
+      }
+      #flex {
+        text-align: center;
+      }
+      #flex2 {
+        text-align: center;
+      }
+
+      #flex > h4 {
+        text-align: center;
+        font-size: 20px;
+      }
+      #flex > p:nth-child(3) {
+        margin-left: 30px;
+      }
+
+      #txt {
+        text-align: center;
+      }
+      button {
+        width: 320px;
+        height: 55px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #00afef;
+      }
+      #flex:hover {
+        cursor: pointer;
+      }
+      #flex:hover > button {
+        background-color: #00afef;
+        color: white;
+        cursor: pointer;
+      }
+
+      #flex > p:nth-child(4) {
+        color: white;
+        background-color: #6da523;
+        padding: 5px 4px;
+        text-align: center;
+        margin: auto;
+        width: 32px;
+        height: 20px;
+        border-radius: 5px;
+      }
+      #flex > div:nth-child(1) {
+        background-color: #ff5b6f;
+        width: 90px;
+        height: 22px;
+        margin: 5px 20px 5px 10px;
+        padding: 5px 4px;
+
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        /* border-radius: 10%; */
+      }
+      #flex2 > p:nth-child(2) {
+        text-align: center;
+        line-height: 1.62;
+        color: rgb(51, 51, 51);
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+      #flex2 > h4 {
+        margin-top: 170px;
+        font-family: "Lato", sans-serif;
+
+        font-size: 1.7rem;
+        font-weight: 600;
+      }
+      #flex2 > button {
+        background-color: #00afef;
+        color: white;
+        width: 100px;
+        /* margin: 0 160px 0 160px; */
+        cursor: pointer;
+      }
+      #flex2 > button:hover {
+        background-color: #064961;
+      }
+      /* medium */
+      @media screen and (min-width: 0px) and (max-width: 600px) {
+        #flex2{
+          display: none;
+        }
+        #container{
+          width: 200%;
+          
+          display: grid;
+          grid-template-columns: repeat(2,1fr );
+          grid-template-rows: repeat(8,300px);
+          overflow: hidden;
+          justify-content: center;
+          
+        }
+        .carousel{
+          width: 180%;
+        }
+        #nav-img{
+          display: none;
+        }
+        .search{
+          margin-left: -27%;
+        }
+        #upper-nav{
+          width: 200%;
+          
+        }
+      }
+      
+      /* @media screen and (min-width: 321px) and (max-width: 720px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(5,330px);
+        }
+        #container {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 10px;
+        margin: auto;
+        width: 100%;
+      } */
+      
+
+      /* """""""""""""""""""""""""""""""""""""""""""""""">>>> */
+      /* *{
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        #foot>div{
+              border: 1px solid lightgray;
+          }
+         
+         #foot{
+            
+            width: 90%;
+            margin: auto;
+            border: 1px solid lightgrey;
+            height: 800px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:15% 20% 65%;
+            margin-top: 5%;
+        
+            text-align: center;
+          
+            
+        }
+        #foot1{
+              display: grid;
+              grid-template-columns: 20% 30% 50%;
+              grid-template-rows: 100%;
+          
+          border: 1px solid lightgray; 
+         }
+         #foot1>div{
+             border: 1px solid lightgray;
+         }
+         #foot2{
+            display: grid;
+              grid-template-columns: 40% 20% 20% 20%;
+              grid-template-rows: 100%;
+         }
+         #foot2>div{
+             border: 1px solid lightgrey;
+         }
+         #foot3{
+            display: grid;
+              grid-template-columns: repeat(4,1fr);
+              grid-template-rows: 100%;
+         }
+         #foot3>div{
+             border: 1px solid lightgrey;
+         }
+        
+        #foot1{
+            display: grid;
+            grid-template-columns: 20% 30% 50%;
+            grid-template-rows: 100%;
+        border: 1px solid lightgrey; 
+         text-align: center;
+       }
+       #foot1>div>img{
+           width: 20%;
+           height: 20%;
+           border: 1px solid white;
+       }
+      
+       #foot1>div:nth-child(3)>button{
+           background-color:  white;
+           color: #4096cc;
+           border: 1px solid #4096cc;
+           
+           width: 50%;
+           height: 50px;
+           border-radius: 20px;
+           
+       }
+       #foot1>div>button:hover{
+           color: white;
+           cursor: pointer;
+           background-color: #4096cc;
+       }
+       #foot1>div{
+           border: 1px solid white;
+       }
+       #foot2{
+          display: grid;
+            grid-template-columns: 40% 20% 20% 20%;
+            grid-template-rows: 100%;
+       }
+       #foot2>div{
+           border: 1px solid white;
+       }
+       #foot4{
+          display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            grid-template-rows: 100%;
+            text-align: start;
+            justify-content: space-around;
+            
+            
+       }
+       
+       #foot4>div{
+           border: 1px solid white;
+       }
+       #foot2>div>img{
+           width: 25%;
+           height: 25%;
+           border: 1px solid white;
+       }
+       #foot4>div>img{
+ width: 60%;
+ height: 60%;
+ margin-left: 15px;
+ border: 1px solid white;
+
+       }
+       #foot4>div>h2{
+           color: gray;
+
+       }
+       #foot4>div>h5{
+           color: rgb(175, 173, 173);
+       }
+       #foot2a{
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
+           grid-template-rows: 60% 40%
+       }
+       #foot2a>div{
+           border: 1px solid white;
+       }
+       #foot2b{
+           display: grid;
+           grid-template-columns: 20% 20% 20% 20%;
+           grid-template-rows: 100%;
+       }
+       #foot2b>div{
+           border: 1px solid white;
+       }
+      #foot2b>div>img{
+          height: 50%;
+          width: 50%;
+      }
+      #foot4>div>h5:hover{
+          color: #4096cc;
+          cursor: pointer;
+      }
+      #hello{
+          margin-top: 110px;
+      }
+      #main{
+          margin-bottom: 10px;
+      }
+      /* -------------------------------------- */
+      /* @media screen and (min-width:0px) and (max-width:720px){
+      #foot{
+            
+            width: 90%;
+            margin: auto;
+            border: 1px solid 3;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:15% 20% 65%;
+            margin-top: 5%;
+            font-size: 10px;
+            text-align: center;
+          
+            
+        } */
+        /* #foot>div{
+            border: 1px solid lightgrey;
+        }
+        #foot1{
+            display: grid;
+            grid-template-columns: 20% 30% 50%;
+            grid-template-rows: 100%;
+        border: 1px solid lightgrey; 
+        font-size: 8px;
+        text-align: center;
+       }
+       #foot1>div:nth-child(1)>img{
+           width: 30%;
+           
+       }
+       #foot1>div:nth-child(2)>img{
+           width: 30%;
+           
+       }
+       #foot1>div:nth-child(3)>button{
+           background-color: #64BAf0;
+           color: white;
+           border: 1px solid white;
+           font-size: 10px;
+           width: 40%;
+           height: 30px;
+           
+       }
+       #foot1>div{
+           border: 1px solid white;
+       }
+       #foot2{
+          display: grid;
+            grid-template-columns: 40% 20% 20% 20%;
+            grid-template-rows: 100%;
+       }
+       #foot2>div{
+           border: 1px solid lightgrey;
+       }
+       #foot4{
+          display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 100%;
+            text-align: start;
+            margin-left: 10px;
+            
+       }
+       #hello{
+           margin-top: 200px;
+       }
+      
+       #foot4>div{
+           border: 1px solid lightgrey;
+       }
+       #foot2>div>img{
+           width: 60%;
+           height: 60%;
+       }
+       #foot4>div>img{
+          width: 80%;
+          height: 90%;
+          margin-left: 15px;
+
+       }
+       #foot4>div>h2{
+           color:lightgrey;
+       }
+       #foot1>div>button:hover{
+        background-color: white;
+        color: #4096cc;
+        cursor: pointer;
+        font-weight: bold;
+    }
+     #div3{
+         margin-left: 133px;
+     }
+      } */
+    </style>
+</head>
+<body>
+
+  <div id="full-nav">
+  <div id="hidden-nav-id" class="hidden-nav-c" style="z-index:10; position: fixed;"></div>
+    <div class="totalnav" style="z-index:10;">
+    <div id="upper-nav">
+        <div>
+            <a href="">
+            <p class="whitepara">Asia's 1st Brand with MADE SAFE Certified Products</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+            <p class="whitepara">Free Shipping Above 399|COD Available | Extra 5% OFF on Prepaid Orders | Shop Now</p>
+            </a>
+        </div>
+        <div>
+            <p class="whitepara"><i class="far fa-user"></i></p>
+        </div>
+    </div>
+    <div class="main-nav">
+    <div id="nav-bar">
+            <div>
+                <img id="nav-img" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+            </div>
+            
+        <div class="search">
+                <input id="nav-input" type="text" placeholder="Search for product.....">
+                <button class="searchbutton">
+                    <div class="searchicon"><i class="fas fa-search"></i></div>
+                    <div class="searchicon">Search</div>
+                    
+                </button>
+        </div>
+        <div class="cart-login-icon">
+                <div>
+                     <p id="cart" style="color: rgb(0,175,239);"><i class="fas fa-shopping-cart"></i><a href="cart.html">Cart</a></p>
+                </div>
+
+                <div class="container">
+                    <nav class="navv">
+                        <ul>
+                            <!-- <li><p id="login" style="color: rgb(0,175,239);"><i class="far fa-user-circle"></i>Login</p></li> -->
+                            <li id="login" ><i id="enter-login-page" class="far fa-user-circle"></i>Login
+                                <div class="megadiv">
+                                    <div class="innermegadiv">
+                                        <p class="font-inline"><i class="far fa-user"></i>Your Profile</p><hr>
+                                        <p class="font-inline"><i class="fas fa-shopping-cart"></i>Your Order</p><hr>
+                                        <p class="font-inline"><i class="fas fa-map-marked-alt"></i>Manage Address</p><hr>
+                                        <p class="font-inline"><i class="fas fa-phone-alt"></i>Contact Us</p><hr>
+                                        <p id="enter-login-page1"><button class="login-button" >LOGIN</button></p>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>   
+                    </nav>
+                    <div class="header"></div>
+                </div>
+        </div>
+    </div>
+    <hr id="hr-line">
+        
+    <div id="lower-div">
+            <nav class="nav-bar">
+                <ul>
+                    <li > <a href="index.html">HOME</a></li>
+                    <li>BABY
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Baby</h3></p>
+                                <p>Baby Sampoo</p>
+                                <p>Baby Oralcare</p>
+                                <p>Baby Oil</p>
+                                <p>Baby Skin</p>
+                                <p>Baby Bath</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: rgb(0,175,239);">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>BEAUTY
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Beauty</h3></p>
+                                <p>Face</p>
+                                <p>Hair</p>
+                                <p>Body</p>
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: rgb(0,175,239);">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>HAIR
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Hair</h3></p>
+                                <p>Shampoo</p>
+                                <p>Conditioner</p>
+                                <p>Hair Oil</p>
+                                <p>Hair Mask</p>
+                                <p>Hair Serum</p>
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: rgb(0,175,239);">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>FACE
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Fash Wash</h3></p>
+                                <p>Face Mask</p>
+                                <p>Face Cream</p>
+                                <p>Face Serum</p>
+                                <p>Face scrub</p>
+                                <p>Face Toner</p>
+                                
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: rgb(0,175,239);">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>BODY
+                        <div class="mega-menu">
+                            <div class="inner-mega-menu">
+                                <p><h3>Explore</h3></p>
+                                <p>New Launches</p>
+                                <p>Best Sellers</p>
+                                <p>Combos</p>
+                                <p>Gift Packs</p>
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3>Body Butter</h3></p>
+                                <p>Body Wash</p>
+                                <p>Body Lotion</p>
+                                <p>Body Scrub</p>
+                                <p>Hand Cream</p>
+                                
+                            </div>
+                            <div class="inner-mega-menu">
+                                <p><h3 style="color: rgb(0,175,239);">See All</h3></p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                     <li >GIFT</li>
+                    <li class="div-a"> <a href="Allproducts.html">ALL </a> </li>
+                    <li class="div-a"><a href="all_blog.html">BLOG</a></li>
+                    <li>PLANT</li>
+                    <li>STORE</li>
+                </ul>
+            </nav>
+            <div class="header-banner"></div>
+    </div>
+    </div>
+       
+   <!-- <div class="cart">
+       <div id="cartoffer">
+           <p id="cartoffer">Congrats, Your Order is Eligible for FREE Shipping</p>
+       </div><br> -->
+        <!-- <div class="cartpage">
+           <h1>CART</h1>
+       </div>  -->
+       <!-- <div>
+           <p id="close" class="fas fa-times"></p>
+       </div> -->
+      <!-- <div id="cartdata">
+       
+      </div> -->
+   <!-- </div>  -->
+   <div class="login-page">
+       <div class="cancel"><img src="https://mamaearth.in/static/mamaearth/close.svg" alt="cancel" height="30px" width="30px"></div>
+       <div class="login-start">Log in to get started</div>
+       <div class="login-intro">
+           <img src="https://mamaearth.in/static/mamaearth/login.svg" alt="refresh" width="80px" height="100%">
+           <span>
+               Get access to your orders, track<br>
+                previous order & Redeem Mama <br>
+                Cash
+           </span>
+       </div>
+       <form>
+                <div style="height: 3rem; display: block; width: 100%;"></div>
+                <div class="enter-mobile-number">
+                    <span>Phone Number</span>
+                    <input type="number" name="contact" prefix="+91" autocomplete="off" placeholder class="StyledInput-sc-1m95fu4-0 bidybM">
+                </div>
+                <div style="height: 2rem; display: block; width: 100%;"></div>
+        
+            <div class="condition">
+                By Continuing, you agree to Mamaearth's 
+                <span>
+                    <a href="https://mamaearth.in/terms-and-conditions">Terms and Conditions</a>
+                </span>
+                and
+                <span>
+                    <a href="https://mamaearth.in/privacy-policy">Privacy Policy</a>
+                </span>
+                <div style="height: 2rem; display: block; width: 100%;"></div>
+            </div>
+            <!-- <input type="submit" class="ekbpwy" value="LOGIN WITH OTP"> -->
+            <!-- <div id="ekbpwy" class="fas fa-arrow-left"></div> -->
+            <button type="submit" class="OTPLoginForm__Loginbtn-sc-10upjnk-1 ekbpwy" >LOGIN WITH OTP</button>
+        </form>
+        <div class="continue-as-guest">
+            <a href="nav.html">CONTINUE AS GUEST</a>
+        </div>
+   </div>
+
+
+
+
+
+                        <div class="signup-page">
+                            
+                            <img id="back" src="https://mamaearth.in/static/mamaearth/arrow_back.svg" alt="back">
+                            <div class="signup-start">Signup for the Goodness Inside</div>
+                            <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                            <div class="full-details">
+                                <form>
+                                    <div style="height: 0.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">Phone Number</span>
+                                    <input type="text" name="phone" class="phone-number">
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">First Name</span>
+                                    <input type="text" name="first-name" class="phone-number">
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">Last Name</span>
+                                    <input type="text" name="last-name" class="phone-number">
+                                    <div style="height: 1.5rem; display: block; width: 100%;"></div>
+                                    <span class="label">Email-Id</span>
+                                    <input type="email" name="email-id" class="phone-number">
+                                    <div style="height: 2rem; display: block; width: 100%;"></div>
+                                    <!-- <input type="submit" class="sign-up" value="SIGN UP"> -->
+                                    <button class="sign-up" type="submit">SIGN UP</button>
+                                </form>
+                            </div>
+                        </div>
+      </div>
+    </div>
+    <div class="carousel"style="">
+    <div id="slick">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider_content" >
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/3KpAt6dymSeMCfM7EVcRcU/68cabba382d97ba93533ce840a6b1dd2/Desktop.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/OoKYuxKNlL96p4n6uytiG/02aecfff5b2170bf9fab1c1be850e17c/Desktop_Without_CTA.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/5PxNrfy3MFlGvhMhbPnkzC/12987fb4e703c124af3dbb04ac15a068/Desktop.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/46QF7M9bz5K63GCCaE3Maw/b3f7805e3455ec73e143ba56ba3cac1e/1920x512-desktop-with-shop-now-copy.jpg?q=40">
+                       </div>
+                       <div class="slider_items">
+                           <img class="w3-image" src="https://images.ctfassets.net/66mrrren2unf/7cIuZmMMGOhy3PBGbpbF04/ac2e5689ae31acefcf1477c45366d846/face-serum.jpg?q=40">
+                       </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+    $('.slider_content').slick({
+      // dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true,
+    adaptiveHeight: true,
+    arrows:true,
+    // prevArrow:'<i class=" fas fa-angle-right clr-gry"></i>',
+    // nextArrow:'.nn2',
+    });
+});
+    </script>
+    <div id="container"></div>
+    <div id="foot">
+      <div id="foot1">
+          <div>
+              <img src="https://mamaearthp.imgix.net/wysiwyg/delivery2x.png?auto=format" alt="">
+              <h5>Free shiping</h5>
+              <h5>On order above Rs.399</h5>
+          
+          </div>
+      <div>
+          <img src="https://mamaearthp.imgix.net/wysiwyg/Group_81512x.png?auto=format" alt="">
+          <h5>COD Available</h5>
+          <h5>@ Rs. 40 Per Order</h5>
+      </div>
+      <div>
+          <h4>Have Queries or Concerns?</h4>
+          <button>CONTACT US</button>
+      </div>
+  </div>
+      <div id="foot2">
+<div id="foot2a">
+  <div>
+  <h5>PAYMENT</h5>
+  <h5>100% Payment Protection ,Easy Return Policy</h5>
+</div>
+<div id="foot2b">
+  <div><img src="https://mamaearthp.imgix.net/wysiwyg/visa2x.png?auto=format&fit=scale" alt=""></div>
+  <div><img src="https://mamaearthp.imgix.net/wysiwyg/master_card2x.png?auto=format&fit=scale" alt=""></div>
+  <div> <img src="https://mamaearthp.imgix.net/wysiwyg/american_express2x.png?auto=format&fit=scale" alt=""></div>
+  <div><img src="https://mamaearthp.imgix.net/wysiwyg/rupay2x.png?auto=format&fit=scale" alt=""></div>
+  <div> <img src="https://mamaearthp.imgix.net/wysiwyg/net_banking2x.png?auto=format&fit=scale" alt=""></div>
+</div>
+  
+</div>
+<div>
+  <img src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x1002x.png?auto=format" alt="">
+<h6>Dermatologically Tested</h6>
+</div>
+<div>
+  <img src="https://mamaearthp.imgix.net/wysiwyg/fda-100x1002x.png?auto=format" alt="">
+  <h5>FDA Approvel</h5>
+</div>
+<div>
+  <img src="https://mamaearthp.imgix.net/wysiwyg/MadeSafeImages13Jan/madesafe13janlogo.png?auto=format" alt="">
+ <h5> Media Safe Certificate</h5>
+</div>
+      </div>
+      
+    
+      <div id="foot4">
+          <div>
+              <h2>USEFUL LINKS</h2>
+              <h5>Privacy Policy</h5>
+              <h5>Returns</h5>
+              <h5>Terms & Conditions</h5>
+              <h5>Terms & Conditions- Cashback</h5>
+              <h5>FAQs</h5>
+              <h5>We're Safe</h5>
+              <h5>Track Order</h5>
+              <h5>Contact Us</h5>
+              <h5>Sitemap</h5>
+              <h5>About Us</h5>
+          </div>
+          <div>
+              <h2>CATEGORIES</h2>
+              <h5>Baby</h5>
+              <h5>Beauty</h5>
+              <h5>Hair</h5>
+              <h5>Face</h5>
+              <h5>Body</h5>
+              <h5>Gift Pack</h5>
+
+          </div>
+          <div>
+              <h2>MY ACCOUNT</h2>
+              <h5>Account</h5>
+              <h5>Order</h5>
+              <h5>Addresses</h5>
+          </div>
+          <div>
+              <img src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png?auto=format" alt="">
+          </div>
+      </div>
+  </div>
+</div></div>
+</body>
+
+</html>
+<script src="nav.js"></script>
+<!-- /**********************************sachin****************************** -->
+<script>
+  var cartarr = JSON.parse(localStorage.getItem("cartArr"))||[];
+  
+    var div1 = document.createElement("div");
+    div1.setAttribute("id", "flex2");
+  
+    var head = document.createElement("h4");
+    head.textContent = "Best sellers";
+    var para = document.createElement("p");
+    para.textContent =
+      "Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.";
+    var click = document.createElement("button");
+        click.addEventListener("click",function(){
+          addtocart(ele)
+        })
+        function addtocart(ele){
+          cartarr.push(ele)
+          
+          localStorage.setItem("cartArr",JSON.stringify(cartarr))
+        }
+        console.log(cartarr)
+    click.textContent = "View All";
+    div1.append(head, para, click);
+  
+    document.querySelector("#container").append(div1);
+    
+    var data = [
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹399",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹249",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-face-wash-1.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹277",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/o/n/onion-shampooconditoner1200x1200_8kx6kfmkik30g8fq.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+    ];
+    data.map(function (ndata) {
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "flex");
+  
+      var best = document.createElement("div");
+      best.textContent = ndata.icon;
+  
+      var image = document.createElement("img");
+      image.setAttribute("src", ndata.image);
+  
+      var carouselslide = document.querySelector(".carausel-slide");
+  
+      var product = document.createElement("p");
+      product.textContent = ndata.price;
+  
+      var rating = document.createElement("p");
+      rating.textContent = ndata.rate;
+      // rating.style.margin = "0 190px 0 190px";
+  
+      var name = document.createElement("h4");
+      name.textContent = ndata.name;
+  
+      var designation = document.createElement("button");
+      designation.textContent = ndata.role;
+      div2.append(best, image, product, rating, name, designation);
+  
+      document.querySelector("#container").append(div2);
+    });
+  
+    // _____________>
+  
+    var div1 = document.createElement("div");
+    div1.setAttribute("id", "flex2");
+  
+    var head = document.createElement("h4");
+    head.textContent = "Best sellers";
+    var para = document.createElement("p");
+    para.textContent =
+      "Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.";
+    var click = document.createElement("button");
+    click.textContent = "View All";
+    div1.append(head, para, click);
+  
+    document.querySelector("#container").append(div1);
+    var data = [
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹399",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹249",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-face-wash-1.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹277",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/o/n/onion-shampooconditoner1200x1200_8kx6kfmkik30g8fq.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+    ];
+    data.map(function (ndata) {
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "flex");
+  
+      var best = document.createElement("div");
+      best.textContent = ndata.icon;
+  
+      var image = document.createElement("img");
+      image.setAttribute("src", ndata.image);
+  
+      var carouselslide = document.querySelector(".carausel-slide");
+  
+      var product = document.createElement("p");
+      product.textContent = ndata.price;
+  
+      var rating = document.createElement("p");
+      rating.textContent = ndata.rate;
+      // rating.style.margin = "0 190px 0 190px";
+  
+      var name = document.createElement("h4");
+      name.textContent = ndata.name;
+  
+      var designation = document.createElement("button");
+      designation.textContent = ndata.role;
+      div2.append(best, image, product, rating, name, designation);
+  
+      document.querySelector("#container").append(div2);
+    });
+  
+    // _________________>
+  
+    var div1 = document.createElement("div");
+    div1.setAttribute("id", "flex2");
+  
+    var head = document.createElement("h4");
+    head.textContent = "Best sellers";
+    var para = document.createElement("p");
+    para.textContent =
+      "Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.";
+    var click = document.createElement("button");
+    click.textContent = "View All";
+    div1.append(head, para, click);
+  
+    document.querySelector("#container").append(div1);
+    var data = [
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹399",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹249",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-face-wash-1.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹277",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/o/n/onion-shampooconditoner1200x1200_8kx6kfmkik30g8fq.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+    ];
+    data.map(function (ndata) {
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "flex");
+  
+      var best = document.createElement("div");
+      best.textContent = ndata.icon;
+  
+      var image = document.createElement("img");
+      image.setAttribute("src", ndata.image);
+  
+      var carouselslide = document.querySelector(".carausel-slide");
+  
+      var product = document.createElement("p");
+      product.textContent = ndata.price;
+  
+      var rating = document.createElement("p");
+      rating.textContent = ndata.rate;
+      // rating.style.margin = "0 190px 0 190px";
+  
+      var name = document.createElement("h4");
+      name.textContent = ndata.name;
+  
+      var designation = document.createElement("button");
+      designation.textContent = ndata.role;
+      div2.append(best, image, product, rating, name, designation);
+  
+      document.querySelector("#container").append(div2);
+    });
+  
+    // >>>>>>>>>>>
+  
+    var div1 = document.createElement("div");
+    div1.setAttribute("id", "flex2");
+  
+    var head = document.createElement("h4");
+    head.textContent = "Best sellers";
+    var para = document.createElement("p");
+    para.textContent =
+      "Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.";
+    var click = document.createElement("button");
+    click.textContent = "View All";
+    div1.append(head, para, click);
+  
+    document.querySelector("#container").append(div1);
+    var data = [
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹399",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹249",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-face-wash-1.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+      {
+        icon: "BEST SELLER",
+        price:
+          "Onion Hair Oil for Hair Regrowth and Hair Fall Control with Redensyl, 150ml",
+        name: "₹277",
+        image:
+          "https://honasa-mamaearth-production.imgix.net/o/n/onion-shampooconditoner1200x1200_8kx6kfmkik30g8fq.jpg?auto=compress&fit=scale&w=320&h=250",
+        rate: "5.0★",
+        role: "ADD TO CART",
+      },
+    ];
+    data.map(function (ndata) {
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "flex");
+  
+      var best = document.createElement("div");
+      best.textContent = ndata.icon;
+  
+      var image = document.createElement("img");
+      image.setAttribute("src", ndata.image);
+  
+      var carouselslide = document.querySelector(".carausel-slide");
+  
+      var product = document.createElement("p");
+      product.textContent = ndata.price;
+  
+      var rating = document.createElement("p");
+      rating.textContent = ndata.rate;
+      // rating.style.margin = "0 190px 0 190px";
+  
+      var name = document.createElement("h4");
+      name.textContent = ndata.name;
+  
+      var designation = document.createElement("button");
+      designation.textContent = ndata.role;
+      div2.append(best, image, product, rating, name, designation);
+  
+      document.querySelector("#container").append(div2);
+    });
+  </script>
