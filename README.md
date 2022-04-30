@@ -5,11 +5,11 @@
 ### Team Members
 
 - **[Sachin Singh](https://github.com/Sachin13579)**
-- **[Pranjal Bhaskar]**
-- **[Brajesh Saxena]**
-- **[Aarti Lather]**
-- **[Kumar Shivam]**
-- **[Kanishka Rajput]**
+- **[Pranjal Bhaskar](https://github.com/pranjalbhaskar-27)**
+- **Brajesh Saxena**
+- **Aarti Lather**
+- **[Kumar Shivam](https://github.com/kumarshivam01)**
+- **Kanishka Rajput**
 
 ---
 
@@ -32,9 +32,9 @@
 - **Landing Page**
   ![Landing Page](https://miro.medium.com/max/1400/1*hWxuPBPhLvaJWFZMEp8wfA.png)
 
-- **Registration Page**
+<!-- - **Registration Page**
 
-  ![Landing Page](https://miro.medium.com/max/1400/1*wycDZACiUjrlSn4Ylm3Grw.png)
+  ![Landing Page](https://miro.medium.com/max/1400/1*wycDZACiUjrlSn4Ylm3Grw.png) -->
 
 - **Product Page**
 
